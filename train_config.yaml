@@ -1,0 +1,11 @@
+base_channels: 128  # base_channels大一些有好处(注意这个值最好别动)
+epochs: 1000 # 训练多少个epoch
+batch_size: 4  # batch_size小一些比较好
+lr_adjust_epoch: 100 # 学习率调整的epoch，降为原有的10%
+batch_print_interval: 100 # 打印间隔，以batch为单位
+checkpoint_save_interval: 10 # 模型保存间隔，以epoch为单位
+save_path: 'C:/Users/Lenovo/Desktop/ai-homework/checkpoint/'  # 模型保存路径(注意这里记得要改成自己的模型路径!!!)
+use_cfg: True  # 是否使用classifier-free guidance，开启就可以训练条件生成模型了(注意这里必须开启)
+device: 'cuda' # cuda、cpu、mps(only macbook),训练设备
+train_dir: 'C:/Users/Lenovo/Desktop/ai-homework/train-data.csv' #训练数据路径(注意这里记得要改成自己的数据路径!!!)
+ 
